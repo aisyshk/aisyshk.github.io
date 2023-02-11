@@ -131,3 +131,7 @@ img.sublink {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
+.project-image {
+    border-radius: 15%;
+}
