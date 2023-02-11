@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #0f0f14;
+    --secondary-color: #8a91bf;
+    --fade-color: #606082;
+    --paragraph-color: #9191b8;
+    --txt-white: #ffffff;
+    --card-bg: #171724;
+    --bg-color: #0c0c10;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: block;
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    color: var(--secondary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.txt-white {
+    color: var(--txt-white);
+}
+
+.paragraph-color {
+    color: var(--paragraph-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* width: 75%; */
+    margin: auto;
+    max-width: 1500px;
+    align-self: center;
+    padding: 10px;
+}
+
+.avatar {
+    float: left;
+    border-radius: 50%;
+    width: 300px;
+    padding: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-height: 615px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 0px 5px 15px 0px;
+    background-color: var(--card-bg);
+}
+
+.card:hover {
+    background-color: var(--primary-color);
+}
+
+img.sublink {
+    width: 35px;
+    height: auto;
+}
+
+#hr {
+    border: 1px solid var(--secondary-color);
+}
+
+.column {
+    float: left;
+    width: auto;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+        display: block-size;
+        margin-bottom: 20px;
+    }
+}
+
+.button-primary {
+    color: var(--txt-white);
+    background-color: var(--primary-color);
+    outline: 1px solid var(--secondary-color);
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
