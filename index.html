@@ -1,82 +1,97 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>aisyshk</title>
-    <link rel="stylesheet" href="./css/mainstyle.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./content/favicon.svg" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta http-equiv="refresh" content="2" />
 </head>
 <body>
-    <div class="container" style="width: 75%;">
-        <img alt="Avatar" src="https://avatars.githubusercontent.com/u/123821243?v=4" class="avatar" />
-        <h1 class="display-1 txt-white">Alice H. <a class="display-3" style="color: var(--secondary-color);">(aisyshk)</a></h1>
-        <hr id="hr">
-        <p>
-            I'm a student learning how to code in C++/C#, TypeScript, software & web design.
-            <br />
-            Aspiring to create something great one day.
-            <br />
-            I love creating and designing stuff, from software to graphic design.
-            <br /><br /><br />
-            <a class="button" href="mailto:aliceiv0321@gmail.com" target="_blank">Contact Me</a>
-            <a class="button" href="resume.html" target="_blank">Resume / CV</a>
-        </p>
-        <!-- <img alt="OS" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"> -->
-    </div>
-    <hr id="hr" style="width: 80%;">
-    <div class="container" style="text-align: center;">
-        <h2 class="txt-white">Projects</h2>
-        <p>
-            Projects I've created or contributed to.
-        </p>
-        <div class="row">
-            <div class="column">
-                <a class="cardHover" href="https://github.com/aisyshk/DailyWallpapers" target="_blank">
-                    <div class="card">
-                        <img class="project" alt="Daily Wallpapers Icon" src="https://raw.githubusercontent.com/aisyshk/DailyWallpapers/master/dailyWallpapersIcon.png" />
-                        <h2 class="txt-white">Daily Wallpapers</h2>
-                        <img alt="language" src="https://camo.githubusercontent.com/121f5000155889c0642b8a6b2a33a7f5fbe5c32d9133dac405ac269da15fcf94/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f432532422532422d3030353939433f7374796c653d666f722d7468652d6261646765266c6f676f3d63253242253242266c6f676f436f6c6f723d7768697465">
-                        <p>Console application that checks Bing's api for new daily images, and sets them as desktop wallpapers.</p>
+    <div class="container">
+        <div class="row" style="flex: 1;">
+            <div class="column" style="background-color: var(--card-bg); width: 35%;">
+                <div class="container">
+                    <img class="avatar" alt="Profile Picture" src="https://avatars.githubusercontent.com/u/123821243?v=4" />
+                    <h1 class="text-white">
+                        Alice H.
+                        <br />
+                        <a class="text-fade" style="font-size: 28px;"><b>(aisyshk)</b></a>
+                    </h1>
+                    <hr class="default" />
+                    <p class="text-paragraph">
+                        I'm a student learning how to code in C++/C#, TypeScript, software & web design.
+                        <br />
+                        Aspiring to create something great one day.
+                        <br />
+                        I love creating and designing stuff, from software to graphic design.
+                    </p>
+                    <hr style="border: 1px solid var(--primary-color);" />
+                    <div class="container">
+                        <a class="button" href="mailto:aliceiv0321@gmail.com" target="_blank">Contact Me</a>
+                        <a class="button" href="resume.html" target="_blank">Resume / CV</a>
                     </div>
-                </a>
-            </div>
-            <!-- Second project*
-        <div class="column">
-            <a href="https://github.com/aisyshk" target="_blank">
-                <div class="card">
-                    <img class="project" alt="proj2" src="https://dummyimage.com/300.png/09f/fff" />
-                    <h2 class="txt-white">Project Title</h2>
-                    <img alt="language" src="https://camo.githubusercontent.com/121f5000155889c0642b8a6b2a33a7f5fbe5c32d9133dac405ac269da15fcf94/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f432532422532422d3030353939433f7374796c653d666f722d7468652d6261646765266c6f676f3d63253242253242266c6f676f436f6c6f723d7768697465">
-                    <p>Project Description. Lorem Ipsum. Ipsum Lorem Borem Dorem.</p>
                 </div>
-            </a>
-        </div>
-        -->
+            </div>
+            <div class="column bg-fade" style="background-color: var(--card-bg); width: 65%;">
+                <div class="container">
+                    <section>
+                        <h2 class="text-white">Projects</h2>
+                        <p class="text-paragraph">
+                            Projects I've created or contributed to.
+                        </p>
+                        <hr class="default" />
+                        <a class="row-button" href="https://github.com/DailyWallpapers">
+                            <div class="row">
+                                <div class="column bg-primary" style="border: 1px solid var(--secondary-color);">
+                                    <h3 class="text-white">Daily Wallpapers</h3>
+                                    <p class="text-paragraph">
+                                        Console application that checks Bing's api for new daily images, and sets them as desktop wallpaper.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <hr style="border: 1px solid rgba(0, 0, 0, 0);  width: 0%;" />
+                        <a class="row-button" href="https://github.com/DailyWallpapers">
+                            <div class="row">
+                                <div class="column bg-primary" style="border: 1px solid var(--secondary-color);">
+                                    <h3 class="text-white">Daily Wallpapers</h3>
+                                    <p class="text-paragraph">
+                                        Console application that checks Bing's api for new daily images, and sets them as desktop wallpaper.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
+                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
+                        <a class="button" href="https://github.com/aisyshk?tab=repositories" target="_blank">More Projects</a>
+                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
+                        <hr class="default" />
+                    </section>
+                    <section>
+                        <h3 class="text-white">Links</h3>
+                        <div class="row">
+                            <div class="column" style="width: 50%;">
+                                <a href="https://github.com/aisyshk"><img class="sublink" alt="GitHub" src="./content/github_icon.png" target="_blank" /></a>
+                                <p class="text-paragraph">GitHub</p>
+                            </div>
+                            <div class="column" style="width: 50%;">
+                                <a href="#"><img class="sublink" alt="Website" src="./content/webL.png" target="_blank" /></a>
+                                <p class="text-paragraph">Website</p>
+                            </div>
+                            <!-- * Steam Link
+                            <div class="column">
+                                <a href="https://steamcommunity.com/id/SysAI/"><img class="sublink" alt="Steam" src="./content/steam.svg" target="_blank" /></a>
+                                <p>Steam</p>
+                            </div>
+                            -->
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container" style="text-align: center;">
-        <h3><a class="button-primary" href="https://github.com/aisyshk?tab=repositories" target="_blank">More Projects</a></h3>
-    </div>
-    <footer class="container" style="text-align: center; padding: 5px 5px;">
-        <h2 style="color: var(--secondary-color);">Links</h2>
-        <div class="row">
-            <div class="column">
-                <a href="https://github.com/aisyshk"><img class="sublink" alt="GitHub" src="./content/github_icon.png" target="_blank" /></a>
-                <p>GitHub</p>
-            </div>
-            <div class="column">
-                <a href="#"><img class="sublink" alt="Website" src="./content/webL.png" target="_blank" /></a>
-                <p>Website</p>
-            </div>
-            <!-- * Steam Link
-            <div class="column">
-                <a href="https://steamcommunity.com/id/SysAI/"><img class="sublink" alt="Steam" src="./content/steam.svg" target="_blank" /></a>
-                <p>Steam</p>
-            </div>
-            -->
-        </div>
-    </footer>
 </body>
 </html>
