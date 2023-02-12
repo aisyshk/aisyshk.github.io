@@ -6,7 +6,7 @@
     --txt-white: #ffffff;
     --card-bg: #171724;
     --bg-color: #0c0c10;
-    font-size: 18px;
+    font-size: 20px;
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -50,6 +50,7 @@ div {
 }
 
 p {
+    color: var(--paragraph-color);
     font-size: 20px;
 }
 
@@ -62,11 +63,11 @@ a {
 }
 
 .container {
-    /* width: 75%; */
     margin: auto;
-    max-width: 1500px;
+    width: auto;
+    /*max-width: 1500px;*/
     align-self: center;
-    padding: 10px;
+    padding: 5px 0px 5px 0px;
 }
 
 .avatar {
@@ -86,9 +87,10 @@ a {
     max-width: 300px;
     min-height: 575px;
     height: auto;
+    width: auto;
     margin: auto;
     text-align: center;
-    padding: 0px 5px 15px 0px;
+    padding: 0px 0px 15px 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, var(--card-bg));
     /*background-color: var(--card-bg);*/
 }
@@ -109,7 +111,7 @@ img.sublink {
 .column {
     float: left;
     width: auto;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .row {
