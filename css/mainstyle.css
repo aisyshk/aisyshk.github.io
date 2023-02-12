@@ -6,7 +6,7 @@
     --txt-white: #ffffff;
     --card-bg: #171724;
     --bg-color: #0c0c10;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -46,6 +46,10 @@ div {
 
 .txt-white {
     color: var(--txt-white);
+}
+
+p {
+    font-size: 18px;
 }
 
 .paragraph-color {
