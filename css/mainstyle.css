@@ -141,3 +141,7 @@ img.sublink {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+
+img.project {
+    padding: 15px 15px 15px 15px;
+}
