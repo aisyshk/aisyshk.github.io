@@ -6,7 +6,7 @@
     --txt-white: #ffffff;
     --card-bg: #171724;
     --bg-color: #0c0c10;
-    font-size: 16px;
+    font-size: 18px;
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -50,7 +50,7 @@ div {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .paragraph-color {
@@ -126,6 +126,17 @@ img.sublink {
         display: block-size;
         margin-bottom: 20px;
     }
+}
+
+.button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 10px 10px 10px;
+}
+
+.button:hover {
+    color: var(--secondary-color);
+    background-color: var(--fade-color);
 }
 
 .button-primary {
