@@ -107,7 +107,7 @@ a {
     margin: auto;
     text-align: center;
     padding: 0px 0px 15px 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, var(--card-bg));
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 30%, var(--card-bg));
     /*background-color: var(--card-bg);*/
 }
 
