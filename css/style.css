@@ -177,7 +177,7 @@ img.avatar {
 }
 
 #dailyWallpaperCard {
-    background-image: url('./content/cards/dailyWallpaperCard.png');
+    background-image: url('../content/cards/dailyWallpaperCard.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5%;
