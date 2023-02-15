@@ -5,11 +5,6 @@
     --border-color: rgba(255, 255, 255, 0.1);
     --p-color: rgb(145, 145, 180);
     --fade-color: rgb(96, 96, 130);
-    --cpp-primary: rgb(113, 151, 209);
-    --cs-primary: rgb(140, 104, 170);
-    --ts-primary: rgb(125, 152, 198);
-    --html-primary: rgb(226, 146, 124);
-    --css-primary: rgb(127, 150, 226);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -32,7 +27,7 @@ h1, h2, h3, a, p, span {
 }
 
 p {
-    color: var(--p-color);
+    color: var(--fade-color);
     font-size: 22px;
 }
 
@@ -40,31 +35,30 @@ a {
     text-decoration: none;
 }
 
-.nav {
-    /*background-color: var(--primary);*/
+nav {
+    background-color: var(--primary);
     display: flex;
     width: 100%;
-    height: 100%;
     z-index: 10;
+    /*border-bottom: 1px solid var(--border-color);*/
 }
 
-.nav > .nav-section {
+nav > .nav-section {
     padding: 3rem 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
-#nav-info-section {
+#nav-avatar-section {
     flex-grow: 1;
     justify-content: flex-end;
-    border-right: 1px solid var(--border-color);
-    gap: 2rem;
 }
 
-#nav-works-section {
-    flex-basis: calc(100% / 1.4);
+#nav-about-section {
+    flex-basis: calc(100%/1.65);
+    /*border-left: 1px solid var(--border-color);*/
     gap: 1rem;
 }
 
@@ -86,28 +80,61 @@ img.avatar {
     color: var(--p-color);
 }
 
+main {
+    flex-basis: calc(100%/2);
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section {
+    height: 100%;
+    border: 1px solid var(--border-color);
+}
+
 .button {
-    color: var(--p-color);
+    color: var(--secondary);
     background-color: var(--primary);
-    border: 1px solid var(--p-color);
+    border: 1px solid var(--secondary);
     font-weight: 500;
     padding: 10px 10px 10px 10px;
 }
 
 .button:hover {
     color: var(--primary);
-    background-color: var(--p-color);
+    background-color: var(--secondary);
     border: 1px solid var(--primary);
     font-weight: 500;
     padding: 15px 15px 15px 15px;
+}
+
+.icon-sm {
+    height: 5vh;
+    width: auto;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 #cards {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 900px;
+    max-width: calc(100% / 2);
     width: 100%;
+    z-index: 3;
+    padding-top: 1rem;
 }
 
 .card {
@@ -117,68 +144,38 @@ img.avatar {
     border: 1px solid rgba(145, 145, 180, 0.2);
     border-radius: 3%;
     cursor: pointer;
-    height: 180px;
+    height: 250px;
     position: relative;
-    width: 300px;
+    width: 350px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card:hover::before {
-    opacity: 1;
-}
+    .card:hover::before {
+        opacity: 1;
+    }
 
-.card::before {
-    background: radial-gradient( 800px circle at 40px 40px, rgba(255, 255, 255, 0.04), transparent 40% );
-    border-radius: inherit;
-    content: "";
-    opacity: 0;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    transition: opacity 250ms;
-    width: 100%;
-    z-index: 2;
-}
+    .card::before {
+        background: radial-gradient( 800px circle at 40px 40px, rgba(255, 255, 255, 0.04), transparent 40% );
+        border-radius: inherit;
+        content: "";
+        opacity: 0;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        transition: opacity 250ms;
+        width: 100%;
+        z-index: 2;
+    }
 
 .card-content {
-    align-self: flex-end;
-    width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.01), rgba(10, 10, 15, 0.2));
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    height: 150px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(2, 2, 5, 0.3));
 }
 
-.pill {
-    font-size: 14px;
-    padding: 1px 4px 1px 4px;
-    background-color: var(--primary);
-    margin: 2px;
-    margin-top: 2px;
-}
-
-#cpp {
-    border: 2px solid var(--cpp-primary);
-}
-
-#cs {
-    border: 2px solid var(--cs-primary);
-}
-
-#ts {
-    border: 2px solid var(--ts-primary);
-}
-
-#html {
-    border: 2px solid var(--html-primary);
-}
-
-#css {
-    border: 2px solid var(--css-primary);
-}
-
-#dailyWallpaperCard {
-    background-image: url('./content/cards/dailyWallpaperCard.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5%;
+.card-description {
+    font-size: 16px;
 }
