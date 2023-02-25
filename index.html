@@ -2,96 +2,80 @@
 <html lang="en">
 <head>
     <title>aisyshk</title>
-    <link rel="stylesheet" href="./css/__old_style_2.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./content/favicon.svg" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7ba697c3a5.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7ba697c3a5.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js" defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
 </head>
 <body>
-    <div class="container">
-        <div class="row" style="flex: 1;">
-            <div class="column" style="background-color: var(--card-bg); width: 35%;">
-                <div class="container">
-                    <img class="avatar" alt="Profile Picture" src="https://avatars.githubusercontent.com/u/123821243?v=4" />
-                    <h1 class="text-white">
-                        Alice H.
-                        <br />
-                        <a class="text-fade" style="font-size: 28px;"><b>(aisyshk)</b></a>
-                    </h1>
-                    <hr class="default" />
-                    <p class="text-paragraph">
-                        I'm a student learning how to code in C++/C#, TypeScript, software & web design.
-                        <br />
-                        Aspiring to create something great one day.
-                        <br /><br />
-                        I love creating and designing stuff, from software to graphic design.
-                    </p>
-                    <hr style="border: 1px solid var(--primary-color);" />
-                    <div class="container">
-                        <a class="button" href="mailto:aliceiv0321@gmail.com" target="_blank">Contact Me</a>
-                        <a class="button" href="resume.html" target="_blank">Resume / CV</a>
+    <div class="nav">
+        <div class="nav-section" id="nav-info-section">
+            <div>
+                <img class="avatar" alt="Profile Picture" src="https://avatars.githubusercontent.com/u/123821243?v=4" />
+                <h1 id="name">Alice H. <span id="github-username">(aisyshk)</span></h1>
+                <p>
+                    I'm a student learning how to code in C++/C#, TypeScript, software & web design.
+                    Aspiring to create something great one day.
+                    <br />
+                    I love creating and designing stuff, from software to graphic design.
+                </p>
+                <div>
+                    <a class="button" href="mailto:aliceiv0321@gmail.com" target="_blank">Contact Me</a>
+                    <a class="button" href="resume.html" target="_blank">Resume / CV</a>
+                </div>
+                <h4 class="unselectable" style="color: var(--secondary);">Languages: </h4>
+                <span class="pill unselectable" id="cpp">C++</span>
+                <span class="pill unselectable" id="cs">C#</span>
+                <span class="pill unselectable" id="ts">TypeScript</span>
+                <span class="pill unselectable" id="html">HTML</span>
+                <span class="pill unselectable" id="css">CSS</span>
+            </div>
+        </div>
+        <div class="nav-section" id="nav-works-section">
+            <div id="cards">
+                <div id="dailyWallpaperCard" class="card" onclick="window.open('https://github.com/aisyshk/DailyWallpapers');">
+                    <div class="card-content">
+                        <h2 class="card-title">Daily Wallpapers <i class="fa-solid fa-up-right-from-square"></i></h2>
                     </div>
                 </div>
-            </div>
-            <div class="column bg-fade" style="background-color: var(--card-bg); width: 65%;">
-                <div class="container">
-                    <section>
-                        <h2 class="text-white">Projects</h2>
-                        <p class="text-paragraph">
-                            Projects I've created or contributed to.
-                        </p>
-                        <hr class="default" />
-                        <a class="row-button" href="https://github.com/DailyWallpapers">
-                            <div class="row">
-                                <div class="column bg-primary" style="border: 1px solid var(--secondary-color);">
-                                    <h3 class="text-white">Daily Wallpapers</h3>
-                                    <p class="text-paragraph">
-                                        Console application that checks Bing's api for new daily images, and sets them as desktop wallpaper.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <hr style="border: 1px solid rgba(0, 0, 0, 0);  width: 0%;" />
-                        <!--<a class="row-button" href="https://github.com/DailyWallpapers">
-                            <div class="row">
-                                <div class="column bg-primary" style="border: 1px solid var(--secondary-color);">
-                                    <h3 class="text-white">Daily Wallpapers</h3>
-                                    <p class="text-paragraph">
-                                        Console application that checks Bing's api for new daily images, and sets them as desktop wallpaper.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>-->
-                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
-                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
-                        <a class="button" href="https://github.com/aisyshk?tab=repositories" target="_blank">More Projects</a>
-                        <hr style="border: 1px solid rgba(0, 0, 0, 0); width: 0%;" />
-                        <hr class="default" />
-                    </section>
-                    <section>
-                        <h3 class="text-white">Links</h3>
-                        <div class="row">
-                            <div class="column" style="width: 50%;">
-                                <a href="https://github.com/aisyshk">
-                                    <img class="sublink" alt="GitHub" src="./content/github_icon.png" target="_blank" />
-                                    <p class="text-paragraph">GitHub</p>
-                                </a>
-                            </div>
-                            <div class="column" style="width: 50%;">
-                                <a href="#">
-                                    <img class="sublink" alt="Website" src="./content/webL.png" target="_blank" />
-                                    <p class="text-paragraph">Website</p>
-                                </a>
-                            </div>
-                            <!-- * Steam Link
-                            <div class="column">
-                                <a href="https://steamcommunity.com/id/SysAI/"><img class="sublink" alt="Steam" src="./content/steam.svg" target="_blank" /></a>
-                                <p>Steam</p>
-                            </div>
-                            -->
+                <div class="card">
+                    <div id="" class="card" onclick="window.open('')">
+                        <div class="card-content">
+                            <h2 class="card-title">Preset <i class="fa-solid fa-up-right-from-square"></i></h2>
                         </div>
-                    </section>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="" class="card" onclick="window.open('')">
+                        <div class="card-content">
+                            <h2 class="card-title">Preset <i class="fa-solid fa-up-right-from-square"></i></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="" class="card" onclick="window.open('')">
+                        <div class="card-content">
+                            <h2 class="card-title">Preset <i class="fa-solid fa-up-right-from-square"></i></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="" class="card" onclick="window.open('')">
+                        <div class="card-content">
+                            <h2 class="card-title">Preset <i class="fa-solid fa-up-right-from-square"></i></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="" class="card" onclick="window.open('')">
+                        <div class="card-content">
+                            <h2 class="card-title">Preset <i class="fa-solid fa-up-right-from-square"></i></h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
