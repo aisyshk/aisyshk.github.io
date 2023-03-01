@@ -202,3 +202,9 @@ img.avatar {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#githubPageCard {
+    background-image: url('../content/cards/website.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
